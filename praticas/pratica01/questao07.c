@@ -5,14 +5,31 @@ Faça um programa em C que calcule a altura alcançada por um avião após ter p
 #include <stdio.h>
 #include <math.h>
 
-int main () {
-  int altura = 5;
-  int distancia = 8;
-  int angulo = 30;
+int main() {
+    double angulo, distancia, altura;
 
-  double altura = (sin(angulo) = altura / distancia); 
+    // Solicita ao usuário que insira o valor do ângulo em graus
+    printf("Digite o valor do ângulo em graus (menor ou igual a 45): ");
+    scanf("%lf", &angulo);
 
-  printf("A altura alcançada pelo avião é %f\n," altura);
+    if (angulo > 45) {
+        printf("O ângulo deve ser menor ou igual a 45 graus.\n");
+        return 1; // Encerra o programa com código de erro
+    }
 
-  return 0;
+    // Solicita ao usuário que insira o valor da distância
+    printf("Digite a distância percorrida pelo avião: ");
+    scanf("%lf", &distancia);
+
+    // Converte o ângulo de graus para radianos para usar na função sin()
+    angulo = angulo * M_PI / 180.0;
+
+    // Calcula a altura usando a fórmula seno(ângulo) = altura/distância
+    altura = sin(angulo) * distancia;
+
+    // Exibe o resultado
+    printf("A altura alcançada pelo avião é: %.2lf unidades de medida\n", altura);
+
+    return 0;
 }
+
