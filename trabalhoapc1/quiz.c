@@ -1,78 +1,237 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() { 
-  char opcao = 0;
-  float saldo = 0.0f;
-
-  while(1) {
-    int ok = system("clear");
-    printf("\e[1;37mMENU PRINCIPAL\e[0m\n");
-    printf("1 - Consultar saldo\n");
-    printf("2 - Fazer recarga\n");
-    printf("3 - Listar recados\n"); 
-    printf("0 - Sair\n"); 
-    printf("Sua escolha => ");
-    ok = scanf("%c", &opcao);
-    getchar();
-
-    switch(opcao) {
-      case '1': 
-        ok = system("clear");
-        printf("CONSULTA DE SALDO\n");
-        printf("Seu saldo é %.2f\n", saldo); 
-        printf("Pressione ENTER para continuar...");
-        getchar();
-        break;
-      case '2': {
-        char valor = 0;
-        while (valor != '0') {
-          ok = system("clear");
-          printf("FAZER RECARGA\n");
-          printf("1 - R$ 10,00\n");
-          printf("2 - R$ 20,00\n");
-          printf("3 - R$ 50,00\n");
-          printf("Escolha um valor de recarga ou digite 0 para retornar: ");
-          ok = scanf("%c", &valor);
-          getchar();
-
-          switch(valor) {
-            case '1': saldo = saldo + 10.0f; break;
-            case '2': saldo = saldo + 20.0f; break;
-            case '3': saldo = saldo + 50.0f; break;
-            case '0': break;
-            default: 
-              printf("Opção inválida!\n"); 
-              printf("Pressione ENTER para continuar...");
-              getchar();
-              break;
-          }
-
-          if (valor == '1' || valor == '2' || valor == '5') {
-            printf("\e[0;32mRecarga realizada com sucesso!\e[0m\n");
+void nivelFacil()
+{ // Corrigido: Adicionados os parênteses
+    int pontuacao = 0;
+    int resposta;
+    int continuar = 1;
+    while (continuar)
+    {
+        system("clear");
+        printf("Quem foi a primeira pessoa a pisar na lua?\n");
+        printf("1- Yuri Gagarin\n");
+        printf("2- Marcos Pontes\n");
+        printf("3- Neil Armstrong\n");
+        printf("4- A cadela Laika\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
             getchar();
-          }
-        }    
-        break;
-      }
-      case '3': 
-        ok = system("clear");
-        printf("LISTAR RECADOS\n"); 
-        printf("Você não tem recados\n"); 
-        printf("Pressione ENTER para continuar...");
-        getchar();
-        break;
-      case '0': break;
-      default: 
-        printf("\e[0;31mOpção inválida!\e[0m\n");
-        printf("Pressione ENTER para continuar...");
-        getchar();
-        break;
+            system("pause");
+            break;
+        }
     }
+    continuar = 1;
+    while (continuar)
+    {
+        system("clear");
+        printf("Qual a montanha mais alta do mundo?\n");
+        printf("1- Qual a montanha mais alta do mundo?\n");
+        printf("2- Monte Everest\n");
+        printf("3- Mauna Kea\n");
+        printf("4- Dhaulagiri\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        system("clear");
+        printf("Qual o maior animal terrestre?\n");
+        printf("1- Elefante africano\n");
+        printf("2- Dinossauro\n");
+        printf("3- Baleia Azul\n");
+        printf("4- Girafa\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        system("clear");
+        printf("Qual o nome do presidente do Brasil?\n");
+        printf("1- Jair Bolsonaro\n");
+        printf("2- Lula\n");
+        printf("3- Dilma\n");
+        printf("4- Fernando Henrique Cardoso\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        system("clear");
+        printf("Onde estão localizadas as Pirâmides de Gizé?\n");
+        printf("1- México\n");
+        printf("2- Peru\n");
+        printf("3- Egito\n");
+        printf("4- Sudão\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        }
+    }
+    printf("Sua pontuação foi: %d\n", pontuacao);
+}
+int main()
+{
+    char opcao = 0;
 
-    if (opcao == '0') break;
-  }
+    while (1)
+    {
+        system("clear"); // Aqui poderia haver um teste de retorno
+        printf("\e[0;33mMENU PRINCIPAL\e[0m\n");
+        printf("1 - Novo Quiz\n");
+        printf("2 - Ver resultados anteriores\n");
+        printf("0 - Sair\n");
+        printf("Sua escolha => ");
+        scanf(" %c", &opcao); // Corrigido: Adicionado espaço para ignorar whitespaces
+        getchar();            // Pode ser problemático se o buffer tiver mais caracteres
 
-  return 0;
+        switch (opcao)
+        {
+        case '1':
+            system("clear"); // Aqui poderia haver um teste de retorno
+            printf("\e[0;33mNOVO QUIZ\e[0m\n");
+            printf("1- Dificuldade Fácil\n");
+            printf("2- Dificuldade Intermediária\n");
+            printf("3- Dificuldade Difícil\n");
+            printf("Escolha uma dificuldade ou digite 0 para voltar => ");
+            scanf(" %c", &opcao); // Corrigido: Adicionado espaço para ignorar whitespaces
+            getchar();            // Pode ser problemático se o buffer tiver mais caracteres
+
+            switch (opcao)
+            {
+            case '1':
+                nivelFacil();
+                break; // Corrigido: Adicionado ponto-e-vírgula e break
+            case '2':
+                printf("Dificuldade Intermediária\n");
+                break; // Corrigido: Adicionado break
+            case '3':
+                printf("Dificuldade Difícil\n");
+                break; // Corrigido: Adicionado break
+            case '0':
+                break; // Corrigido: Adicionado break
+            default:
+                printf("Opção inválida!\n");
+                printf("Pressione ENTER para continuar...");
+                getchar();
+                break;
+            }
+            break;
+
+        case '2':
+            // Aqui deve ir o código para "Ver resultados anteriores"
+            break;
+
+        case '0':
+            return 0; // Encerra o programa
+
+        default:
+            printf("\e[0;31mOpção inválida!\e[0m\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            break;
+        }
+    }
+    return 0;
 }
