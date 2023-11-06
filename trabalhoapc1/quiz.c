@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main() { 
   char opcao = 0;
   float saldo = 0.0f;
 
