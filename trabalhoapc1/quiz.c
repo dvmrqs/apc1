@@ -171,6 +171,352 @@ void nivelFacil()
     }
     printf("Sua pontuação foi: %d\n", pontuacao);
 }
+
+void nivelMedio()
+{
+    int continuar = 1;
+    int pontuacao = 0;
+    int resposta;
+    while (continuar)
+    {
+        system("clear");
+        printf("Qual é a capital do Canadá?\n");
+        printf("1- Toronto\n");
+        printf("2- Montreal\n");
+        printf("3- Ottawa\n");
+        printf("4- Vancouver\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Quem escreveu a peça de teatro Romeu e Julieta?\n");
+        printf("1- William Shakespeare\n");
+        printf("2- Machado de Assis\n");
+        printf("3- Molière\n");
+        printf("4- Ésquilo\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Quantos estados tem no Brasil?\n");
+        printf("1- 26\n");
+        printf("2- 27\n");
+        printf("3- 28\n");
+        printf("4- 29\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Quais o menor e o maior país do mundo?\n");
+        printf("1- Vaticano e Rússia\n");
+        printf("2- Nauru e China\n");
+        printf("3- Mônaco e Canadá\n");
+        printf("4- Malta e Estados Unidos\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Quanto tempo a luz do Sol demora para chegar à Terra?\n");
+        printf("1- 12 minutos\n");
+        printf("2- 1 dia\n");
+        printf("3- 12 horas\n");
+        printf("4- 8 minutos\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            pontuacao++;
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar();
+            system("pause");
+            break;
+        }
+    }
+    printf("Sua pontuação foi: %d\n", pontuacao);
+}
+
+void niveldificil()
+{
+    int continuar = 1;
+    int pontuacao = 0;
+    int resposta;
+    while (continuar)
+    {
+        printf("Qual a obra de arte mais cara já arrematada em um leilão?\n");
+        printf("1- A Ronda Noturna, de Rembrandt\n");
+        printf("2- Nº 5, de Jackson Pollock\n");
+        printf("3- Os Jogadores de Cartas, de Paul Cézanne\n");
+        printf("4-  Salvator Mundi, de Leonardo da Vinci\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            pontuacao++;
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Qual o nome do cientista que descobriu o processo de pasteurização e a vacina contra a raiva?\n");
+        printf("1- Louis Pasteur\n");
+        printf("2- Marie Curie\n");
+        printf("3- Charles Darwin\n");
+        printf("4- Albert Einstein\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf(" Qual o país mais novo do mundo?\n");
+        printf("1- Kosovo\n");
+        printf("2- Palestina\n");
+        printf("3- Sudão do Sul\n");
+        printf("4- Curdistão\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Quem foi a primeira mulher a viajar para o espaço?\n");
+        printf("1- Valentina Tereshkova\n");
+        printf("2- Svetlana Savitskaya\n");
+        printf("3- Sally Ride\n");
+        printf("4- Mae Jemison\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            system("pause");
+            break;
+        }
+    }
+    continuar = 1;
+    while (continuar)
+    {
+        printf("Qual foi a célebre invenção feita por Robert Kahn e Vint Cerf?\n");
+        printf("1- O telefone\n");
+        printf("2- A lâmpada\n");
+        printf("3- A internet\n");
+        printf("4- O computador\n");
+        printf("Entre com sua resposta: ");
+        scanf("%d", &resposta);
+        switch (resposta)
+        {
+        case 1:
+            continuar = 0;
+            break;
+        case 2:
+            continuar = 0;
+            break;
+        case 3:
+            pontuacao++;
+            continuar = 0;
+            break;
+        case 4:
+            continuar = 0;
+            break;
+        default:
+            printf("Opção inválida!\n");
+            printf("Pressione ENTER para continuar...");
+            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            system("pause");
+            break;
+        }
+    }
+    printf("Sua pontuação foi: %d\n", pontuacao);
+}
+
 int main()
 {
     char opcao = 0;
@@ -204,7 +550,7 @@ int main()
                 nivelFacil();
                 break; // Corrigido: Adicionado ponto-e-vírgula e break
             case '2':
-                printf("Dificuldade Intermediária\n");
+                nivelMedio();
                 break; // Corrigido: Adicionado break
             case '3':
                 printf("Dificuldade Difícil\n");
