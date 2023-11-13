@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void nivelFacil()
-{ // Corrigido: Adicionados os parênteses
+{ 
     int pontuacao = 0;
     int resposta;
     int continuar = 1;
@@ -377,7 +377,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar(); 
             system("pause");
             break;
         }
@@ -410,7 +410,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar(); 
             system("pause");
             break;
         }
@@ -443,7 +443,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar(); 
             system("pause");
             break;
         }
@@ -476,7 +476,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar(); 
             system("pause");
             break;
         }
@@ -509,7 +509,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); // Corrigido: Adicionado getchar() para limpar o buffer
+            getchar(); 
             system("pause");
             break;
         }
@@ -523,40 +523,40 @@ int main()
 
     while (1)
     {
-        system("clear"); // Aqui poderia haver um teste de retorno
+        system("clear"); 
         printf("\e[0;33mMENU PRINCIPAL\e[0m\n");
         printf("1 - Novo Quiz\n");
         printf("2 - Ver resultados anteriores\n");
         printf("0 - Sair\n");
         printf("Sua escolha => ");
-        scanf(" %c", &opcao); // Corrigido: Adicionado espaço para ignorar whitespaces
-        getchar();            // Pode ser problemático se o buffer tiver mais caracteres
+        scanf(" %c", &opcao); 
+        getchar();           
 
         switch (opcao)
         {
         case '1':
-            system("clear"); // Aqui poderia haver um teste de retorno
+            system("clear"); 
             printf("\e[0;33mNOVO QUIZ\e[0m\n");
             printf("1- Dificuldade Fácil\n");
             printf("2- Dificuldade Intermediária\n");
             printf("3- Dificuldade Difícil\n");
             printf("Escolha uma dificuldade ou digite 0 para voltar => ");
-            scanf(" %c", &opcao); // Corrigido: Adicionado espaço para ignorar whitespaces
-            getchar();            // Pode ser problemático se o buffer tiver mais caracteres
+            scanf(" %c", &opcao); 
+            getchar();           
 
             switch (opcao)
             {
             case '1':
                 nivelFacil();
-                break; // Corrigido: Adicionado ponto-e-vírgula e break
+                break; 
             case '2':
                 nivelMedio();
-                break; // Corrigido: Adicionado break
+                break; 
             case '3':
                 printf("Dificuldade Difícil\n");
-                break; // Corrigido: Adicionado break
+                break; 
             case '0':
-                break; // Corrigido: Adicionado break
+                break;
             default:
                 printf("Opção inválida!\n");
                 printf("Pressione ENTER para continuar...");
@@ -566,11 +566,11 @@ int main()
             break;
 
         case '2':
-            // Aqui deve ir o código para "Ver resultados anteriores"
+            // "Ver resultados anteriores"
             break;
 
         case '0':
-            return 0; // Encerra o programa
+            return 0; 
 
         default:
             printf("\e[0;31mOpção inválida!\e[0m\n");
