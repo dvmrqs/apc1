@@ -213,6 +213,7 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Quem escreveu a peça de teatro Romeu e Julieta?\n");
         printf("1- William Shakespeare\n");
         printf("2- Machado de Assis\n");
@@ -246,6 +247,7 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Quantos estados tem no Brasil?\n");
         printf("1- 26\n");
         printf("2- 27\n");
@@ -279,6 +281,7 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Quais o menor e o maior país do mundo?\n");
         printf("1- Vaticano e Rússia\n");
         printf("2- Nauru e China\n");
@@ -312,6 +315,7 @@ void nivelMedio()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Quanto tempo a luz do Sol demora para chegar à Terra?\n");
         printf("1- 12 minutos\n");
         printf("2- 1 dia\n");
@@ -352,6 +356,7 @@ void niveldificil()
     int resposta;
     while (continuar)
     {
+        system("clear");
         printf("Qual a obra de arte mais cara já arrematada em um leilão?\n");
         printf("1- A Ronda Noturna, de Rembrandt\n");
         printf("2- Nº 5, de Jackson Pollock\n");
@@ -385,6 +390,7 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Qual o nome do cientista que descobriu o processo de pasteurização e a vacina contra a raiva?\n");
         printf("1- Louis Pasteur\n");
         printf("2- Marie Curie\n");
@@ -418,6 +424,7 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf(" Qual o país mais novo do mundo?\n");
         printf("1- Kosovo\n");
         printf("2- Palestina\n");
@@ -451,6 +458,7 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Quem foi a primeira mulher a viajar para o espaço?\n");
         printf("1- Valentina Tereshkova\n");
         printf("2- Svetlana Savitskaya\n");
@@ -484,6 +492,7 @@ void niveldificil()
     continuar = 1;
     while (continuar)
     {
+        system("clear");
         printf("Qual foi a célebre invenção feita por Robert Kahn e Vint Cerf?\n");
         printf("1- O telefone\n");
         printf("2- A lâmpada\n");
