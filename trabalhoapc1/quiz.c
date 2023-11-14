@@ -1,11 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void pause()
+{
+    printf("Pressione ENTER para continuar...");
+    while (getchar() != '\n')
+        ;
+    getchar();
+}
 void nivelFacil()
-{ 
-    int pontuacao = 0;
+{
     int resposta;
     int continuar = 1;
+    int pontuacao = 0;
     while (continuar)
     {
         system("clear");
@@ -156,27 +163,43 @@ void nivelFacil()
         {
         case 1:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
+            ;
             break;
         case 2:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         case 3:
             pontuacao++;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             continuar = 0;
             break;
         case 4:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
+            break;
+        default:
+            printf("Opção inválida!\n");
+            pause();
             break;
         }
     }
-    printf("Sua pontuação foi: %d\n", pontuacao);
 }
 
 void nivelMedio()
 {
     int continuar = 1;
-    int pontuacao = 0;
     int resposta;
+    int pontuacao = 0;
     while (continuar)
     {
         system("clear");
@@ -327,15 +350,27 @@ void nivelMedio()
         {
         case 1:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         case 2:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         case 3:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         case 4:
             pontuacao++;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            system("pause");
             continuar = 0;
             break;
         default:
@@ -346,7 +381,6 @@ void nivelMedio()
             break;
         }
     }
-    printf("Sua pontuação foi: %d\n", pontuacao);
 }
 
 void niveldificil()
@@ -382,7 +416,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); 
+            getchar();
             system("pause");
             break;
         }
@@ -391,7 +425,8 @@ void niveldificil()
     while (continuar)
     {
         system("clear");
-        printf("Qual o nome do cientista que descobriu o processo de pasteurização e a vacina contra a raiva?\n");
+        printf("Qual o nome do cientista que descobriu o processo de pasteurização "
+               "e a vacina contra a raiva?\n");
         printf("1- Louis Pasteur\n");
         printf("2- Marie Curie\n");
         printf("3- Charles Darwin\n");
@@ -416,7 +451,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); 
+            getchar();
             system("pause");
             break;
         }
@@ -450,7 +485,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); 
+            getchar();
             system("pause");
             break;
         }
@@ -484,7 +519,7 @@ void niveldificil()
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); 
+            getchar();
             system("pause");
             break;
         }
@@ -504,66 +539,80 @@ void niveldificil()
         {
         case 1:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         case 2:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         case 3:
             pontuacao++;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            system("pause");
             continuar = 0;
             break;
         case 4:
             continuar = 0;
+            printf("\nQuiz Concluído!\n");
+            printf("Sua pontuação final foi: %d\n", pontuacao);
+            pause();
             break;
         default:
             printf("Opção inválida!\n");
             printf("Pressione ENTER para continuar...");
-            getchar(); 
+            getchar();
             system("pause");
             break;
         }
     }
-    printf("Sua pontuação foi: %d\n", pontuacao);
 }
 
 int main()
 {
     char opcao = 0;
-
     while (1)
     {
-        system("clear"); 
+        system("clear");
         printf("\e[0;33mMENU PRINCIPAL\e[0m\n");
         printf("1 - Novo Quiz\n");
         printf("2 - Ver resultados anteriores\n");
         printf("0 - Sair\n");
         printf("Sua escolha => ");
-        scanf(" %c", &opcao); 
-        getchar();           
+        scanf(" %c", &opcao);
+        getchar();
 
         switch (opcao)
         {
         case '1':
-            system("clear"); 
+            system("clear");
+            char nome[50];
+            printf("Coloque seu nome: ");
+            scanf("%s", nome);
+            system("clear");
             printf("\e[0;33mNOVO QUIZ\e[0m\n");
             printf("1- Dificuldade Fácil\n");
             printf("2- Dificuldade Intermediária\n");
             printf("3- Dificuldade Difícil\n");
             printf("Escolha uma dificuldade ou digite 0 para voltar => ");
-            scanf(" %c", &opcao); 
-            getchar();           
+            scanf(" %c", &opcao);
+            getchar();
 
             switch (opcao)
             {
             case '1':
                 nivelFacil();
-                break; 
+                break;
             case '2':
                 nivelMedio();
-                break; 
+                break;
             case '3':
-                printf("Dificuldade Difícil\n");
-                break; 
+                niveldificil();
+                break;
             case '0':
                 break;
             default:
@@ -575,11 +624,11 @@ int main()
             break;
 
         case '2':
-            // "Ver resultados anteriores"
+
             break;
 
         case '0':
-            return 0; 
+            return 0;
 
         default:
             printf("\e[0;31mOpção inválida!\e[0m\n");
